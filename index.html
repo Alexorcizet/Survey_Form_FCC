@@ -1,0 +1,55 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+  <link href="./styles.css" rel="stylesheet" />
+  <title>Battle of the MMORPG's</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 id="title">Battle of the MMORPG's</h1>
+    <p id="description"><em>Which one is the best one?</em></p>
+
+    <legend>Contant Info:</legend>
+    <form id="survey-form">
+      <label id="name-label">Name:</label><br>
+      <input type=text id="name" label="name" placeholder="Name" required><br>
+      <label id="email-label" for="email">Email: </label><br>
+      <input type="email" id="email" label="email" placeholder="Email" required><br>
+      <label id="number-label">Phone number</label><br>
+      <input type="number" id="number" label="number" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" min="000-000-0000" max="999-999-9999" required><br>
+      <label for="dropdown">What's your game?</label><br>
+      <select id="dropdown" for="dropdown">
+        <option value="World-of-Warcraft">World of Warcraft</option>
+        <option value="Guild-Wars">Guild Wars</option>
+        <option value="Final-Fantasy-14">Final Fantasy 14</option>
+        <option value="New World">New World</option>
+        <option value="other">Other</option>
+      </select>
+      <p>What's your favorite playstyle?:</p>
+      <label for="favorite-specc">
+        <input id="text" type="radio" name="specc" value="tank" checked>A Protector of the weak, Tank</label><br>
+      <input id="text" type="radio" name="specc" value="Healer">A humble savior, Healer</label><br>
+      <input id="text" type="radio" name="specc" value="melee">A ferocias combatant, Melee DPS</label><br>
+      <input id="text" type="radio" name="specc" value="Ranged">A fearsome magic wielder, Ranged DPS</label><br>
+      <p>What's your favorite race style?:</p>
+      <label for="favorite-class">
+        <input id="text" type="checkbox" name="race" value="undead" checked>A morbid Undead</label><br>
+      <input id="text" type="checkbox" name="race" value="orc">A brutal orc</label><br>
+      <input id="text" type="checkbox" name="race" value="human">A melevolant Human</label><br>
+      <input id="text" type="checkbox" name="race" value="elf">A mystic Elf</label><br>
+      <label id="textarea">What would you like to see in the future of MMORPG?</label><br>
+      <textarea name="textarea" style="width:400px; height:100px;"></textarea><br>
+      <input id="submit" type="submit" value="Charge!">
+    </form>
+  </div>
+</body>
+<footer>
+  <p id="mba"> Made by Alexorcizet</p>
+</footer>
+
+</html>
